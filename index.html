@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>IP Address Generator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>IP Address Generator</h1>
+        <div class="searchbox">
+          <input type="text" placeholder="Search for any IP address or domain" class="search-input" id="search-input">
+          <button onclick="getIPAddress()"><i class="fa fa-chevron-right"></i></button>
+      </div>
+      <div class="data">
+        <h2>IP ADDRESS</h2>
+        <p id="ip-address"></p>
+        <h2>LOCATION</h2>
+        <p id="region"></p>
+        <h2>TIMEZONE</h2>
+        <p id="timezone"></p>
+        <h2>ISP</h2>
+        <p id="org"></p>
+    </div>
+    <div class="iframe-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+  </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
